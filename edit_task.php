@@ -32,18 +32,16 @@
 
 <div class="container p-4">
     <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mx-auto">
             <div class="card card-body">
                 <form action="edit_task.php?id=<?php echo $_GET['id']; ?>" method="POST">
-                    <div class="form-group">
+                    <div class="form-label">
                         <input type="text" name="title" value="<?php echo $title; ?>" 
                         class="form-control" placeholder="Update title">
                     </div>
-                    
-                    <div class="form-group">
+                    <div class="form-label">
                         <textarea name="description" rows="2" class="form-control" placeholder="Update description"><?php echo $description; ?></textarea>
                     </div>
-
                     <button type="submit" class="btn btn-success" name="update">Update</button>
                 </form>
             </div>

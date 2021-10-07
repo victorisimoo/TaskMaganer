@@ -13,11 +13,11 @@
             <?php session_unset(); } ?>
             <div class="card card-body">
                 <form action="save_task.php" method="POST">
-                    <div class="form-group">
+                    <div class="form-label">
                         <input type="text" name="title" class="form-control" placeholder="Title..."
                         autofocus>
                     </div>
-                    <div class="form-group">
+                    <div class="form-label">
                         <textarea name="description" id="" rows="2" class="form-control" 
                         placeholder="Description..."></textarea>
                     </div>
